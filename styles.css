@@ -1,3 +1,118 @@
+.hero-news__names {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #fff;
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+.hero-news {
+  width: 58vw; /* 10% menos que el video (70vw) */
+  max-width: 90vw;
+  height: 71vh; /* 10% menos que el video (90vh) */
+  max-height: 90vh;
+  min-width: 320px;
+  margin: 3vh auto 2rem auto;
+  background: rgba(255,255,255,0.10); /* 10% transparencia */
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-news__top {
+  width: 100%;
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-news__city {
+  margin-left: 0.5rem;
+}
+.hero-news__date {
+  margin-right: 0.5rem;
+}
+.hero-news__headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+.hero-news__heart {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #fff;
+}
+.hero-news__title {
+  font-family: 'UnifrakturCook', 'Old English Text MT', 'Blackletter', cursive, serif;
+  font-size: 3.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.hero-news__line {
+  border-top: 3px solid #fff;
+  margin: 0.2rem 0 0.7rem 0;
+}
+.hero-news__subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  .hero-news {
+    width: 81vw; /* 10% menos que el video (90vw) */
+    max-width: 98vw;
+    height: 82vh; /* 10% menos que el video (95vh) */
+    max-height: 95vh;
+    min-width: unset;
+    margin: 2vh auto 1.5rem auto;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .hero-news__headline {
+    font-size: 1.5rem;
+  }
+  .hero-news__title {
+    font-size: 1.5rem;
+  }
+  .hero-news__subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-news__top {
+    padding: 0 0.5rem;
+    font-size: 0.95rem;
+  }
+}
+/* Fuente Blackletter para "Las Noticias" */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 body, html {
   margin: 0;
   padding: 0;

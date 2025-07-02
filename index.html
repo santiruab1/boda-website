@@ -5,31 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra Boda</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="background-video-container">
-    <video id="bg-video" autoplay loop playsinline>
-  <script>
-    // Permitir audio tras interacción del usuario
-    document.addEventListener('DOMContentLoaded', function() {
-      var video = document.getElementById('bg-video');
-      function enableAudio() {
-        video.muted = false;
-        video.play();
-        document.removeEventListener('click', enableAudio);
-        document.removeEventListener('touchstart', enableAudio);
-      }
-      document.addEventListener('click', enableAudio);
-      document.addEventListener('touchstart', enableAudio);
-    });
-  </script>
+    <video id="bg-video" autoplay loop muted playsinline>
       <source src="video.mp4" type="video/mp4">
       No se puede mostrar el video.
     </video>
   </div>
   <div class="content">
-    <h1>Nuestra Boda</h1>
+    <section class="hero-news">
+      <div class="hero-news__top">
+        <span class="hero-news__city">Medellín, parques del río</span>
+        <span class="hero-news__date">30 de septiembre</span>
+      </div>
+      <div class="hero-news__headline">
+        <span class="hero-news__heart">♥</span>
+        <span class="hero-news__title">Las noticias</span>
+        <span class="hero-news__heart">♥</span>
+      </div>
+      <div class="hero-news__line"></div>
+      <div class="hero-news__subtitle">¡Nos Casamos!</div>
+      <div class="hero-news__names">Ángela Moscoso & Santiago Rúa</div>
+    </section>
     <!-- Aquí puedes agregar el resto del contenido -->
   </div>
 </body>
