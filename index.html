@@ -9,7 +9,21 @@
 </head>
 <body>
   <div class="background-video-container">
-    <video id="bg-video" autoplay loop muted playsinline>
+    <video id="bg-video" autoplay loop playsinline>
+  <script>
+    // Permitir audio tras interacción del usuario
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('bg-video');
+      function enableAudio() {
+        video.muted = false;
+        video.play();
+        document.removeEventListener('click', enableAudio);
+        document.removeEventListener('touchstart', enableAudio);
+      }
+      document.addEventListener('click', enableAudio);
+      document.addEventListener('touchstart', enableAudio);
+    });
+  </script>
       <source src="video.mp4" type="video/mp4">
       No se puede mostrar el video.
     </video>
